@@ -1,5 +1,8 @@
 import json
 import requests
+import sqlite3
+from sqlite3 import Error
+
 
 # Latitude de Perpignan	42.6886591
 # Longitude de Perpignan	2.8948332
@@ -7,7 +10,6 @@ import requests
 api_key = "b8bdb7d52b20aa7c239f409d7f009840"
 global tabCity
 tabCity = ""
-
 
 def copie(tab):
     fichier = open("data.csv", "w+")
